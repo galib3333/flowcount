@@ -77,7 +77,7 @@ function save() {
 // console.log(totalPoints);
 
 let welcomeEl = document.getElementById("welcome-el");
-let name = "Galib";
+let name = "User Entity";
 let greeting = "Welcome back, " + name + "!";
 
 welcomeEl.innerText = greeting + "👋";

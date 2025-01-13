@@ -1,0 +1,86 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/bg-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: rgb(223, 223, 223);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #ffd700;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  color: whitesmoke;
+  width: 200px;
+  background-color: goldenrod;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add more space between buttons */
+  border-radius: 5px;
+  border: 2px solid goldenrod;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: transform 0.1s; /* Add smooth transition */
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly reduce size when clicked */
+}
+
+/* Optional: Add hover effect for better interactivity */
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+#increment-btn {
+  background-color: #016f32;
+}
+
+#save-btn {
+  background-color: darkred;
+}
+
+p {
+  color: rgb(212, 212, 212);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container {
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 40px;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+  width: 300px;
+}
